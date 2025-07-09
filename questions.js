@@ -1071,8 +1071,12 @@ window.questions = [
       "d) The capability of a system to acquire, process and apply knowledge"
     ],
     "correct_answer": "D",
-    "k_level": "K2",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. Autonomy and control handover are important but not the core definition of AI.",
+      "b": "Incorrect. Self-learning without supervision refers to unsupervised learning, which is a subtype, not the full definition.",
+      "c": "Incorrect. Assessing environments and acting on pre-learned behavior describes reactive systems but not AI broadly.",
+      "d": "Correct. The syllabus defines AI as systems that can acquire, process, and apply knowledge to perform tasks."
+    }
   },
   {
     "id": 69,
@@ -1084,8 +1088,12 @@ window.questions = [
       "d) The system shall achieve at least 90% accuracy within a specified tolerance range"
     ],
     "correct_answer": "A",
-    "k_level": "K2",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Correct. Unexpected scenarios not defined in documentation are difficult to test and validate.",
+      "b": "Incorrect. Performance metrics like timing are testable using standard tools.",
+      "c": "Incorrect. API security can be verified through established test practices.",
+      "d": "Incorrect. Accuracy thresholds can be validated with ground truth data."
+    }
   },
   {
     "id": 70,
@@ -1097,12 +1105,16 @@ window.questions = [
       "d) A search engine algorithm prioritizes speed over relevancy"
     ],
     "correct_answer": "B",
-    "k_level": "K2",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. Avoiding traffic may align with intended goals, not reward exploitation.",
+      "b": "Correct. Maximizing user engagement by generating long responses manipulates metrics rather than improving quality.",
+      "c": "Incorrect. Prioritizing precision is aligned with legitimate goals.",
+      "d": "Incorrect. Prioritizing speed over relevancy is a trade-off, not an exploit."
+    }
   },
   {
     "id": 71,
-    "question": "Connect the quality characteristics with their definitions:\\n1 - Transparency\\n2 - Interpretability\\n3 - Explainability\\n\\nA - The understandability of the AI technology by various stakeholders\\nB - The ease with which the algorithm can be determined\\nC - The clarity with which the user interface displays options and controls for interacting with the AI system\\nD - The ease with which users can determine how the AI-based system generates a particular answer\\n\\nWhich combination is correct?",
+    "question": "Connect the quality characteristics with their definitions:\n1 - Transparency\n2 - Interpretability\n3 - Explainability\n\nA - The understandability of the AI technology by various stakeholders\nB - The ease with which the algorithm can be determined\nC - The clarity with which the user interface displays options and controls for interacting with the AI system\nD - The ease with which users can determine how the AI-based system generates a particular answer\n\nWhich combination is correct?",
     "options": [
       "a) 1-C; 2-A; 3-B",
       "b) 1-B; 2-D; 3-A",
@@ -1110,8 +1122,12 @@ window.questions = [
       "d) 1-B; 2-A; 3-D"
     ],
     "correct_answer": "D",
-    "k_level": "K2",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. Transparency is about visibility of system internals, not UI clarity.",
+      "b": "Incorrect. Interpretability is about understanding system logic, not transparency.",
+      "c": "Incorrect. Explainability relates to how outcomes are explained, not UI design.",
+      "d": "Correct. Transparency = B (algorithm clarity), Interpretability = A (stakeholder understanding), Explainability = D (reasoning for outputs)."
+    }
   },
   {
     "id": 72,
@@ -1123,8 +1139,12 @@ window.questions = [
       "d) Model training"
     ],
     "correct_answer": "B",
-    "k_level": "K1",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. Deployment can introduce bias if assumptions change in real-world use.",
+      "b": "Correct. Testing is meant to detect issues, not introduce them.",
+      "c": "Incorrect. Data collection is a major source of bias (e.g. sampling bias).",
+      "d": "Incorrect. Training on biased data propagates those biases."
+    }
   },
   {
     "id": 73,
@@ -1136,8 +1156,12 @@ window.questions = [
       "d) Poorly designed final outcome"
     ],
     "correct_answer": "A",
-    "k_level": "K1",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Correct. The ML algorithm itself isn't the typical cause of reward hacking — it's the reward structure.",
+      "b": "Incorrect. Poor reward shaping can lead to unintended behaviors.",
+      "c": "Incorrect. Misleading feedback can cause the model to learn the wrong behaviors.",
+      "d": "Incorrect. An ambiguous final goal may incentivize incorrect optimization."
+    }
   },
   {
     "id": 74,
@@ -1149,8 +1173,12 @@ window.questions = [
       "d) Reinforcement learning Agent is no longer considered intelligent as it 'hacks' the task and performs actions which were not intended by the programmer in order to receive a reward"
     ],
     "correct_answer": "D",
-    "k_level": "K1",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. This reflects a real phenomenon where successful AI is considered 'just software'.",
+      "b": "Incorrect. Some people do dismiss non-neural approaches, which fits the AI Effect.",
+      "c": "Incorrect. Game AI using simple logic being seen as non-AI aligns with the concept.",
+      "d": "Correct. Reward hacking is a testing/failure issue, not a reason to deny the system is intelligent."
+    }
   },
   {
     "id": 75,
@@ -1163,7 +1191,12 @@ window.questions = [
     ],
     "correct_answer": "C",
     "k_level": "K1",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. 'Weak AI' is synonymous with Narrow AI, which can still be very capable—it does not imply poor performance.",
+      "b": "Incorrect. LLMs are powerful but still classified as Narrow AI because they lack general cognitive abilities.",
+      "c": "Correct. General AI (AGI) refers to a system capable of performing any intellectual task that a human can do.",
+      "d": "Incorrect. Limited context does not necessarily lead to incorrect outputs if the AI is well-trained for that domain."
+    }
   },
   {
     "id": 76,
@@ -1176,7 +1209,12 @@ window.questions = [
     ],
     "correct_answer": "D",
     "k_level": "K1",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. Scalability analysis is useful but doesn’t directly relate to compression or network depth.",
+      "b": "Incorrect. While balancing performance and resources is essential, it’s broader than the focus on depth and efficiency.",
+      "c": "Incorrect. Update mechanisms are part of maintainability, not compression or network design.",
+      "d": "Correct. Network depth is directly tied to both representational capacity and computational efficiency in DNNs."
+    }
   },
   {
     "id": 77,
@@ -1189,7 +1227,12 @@ window.questions = [
     ],
     "correct_answer": "A",
     "k_level": "K1",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Correct. Increasing depth improves hierarchical feature extraction and model accuracy (to a point).",
+      "b": "Incorrect. More complex models often require more—not less—training data.",
+      "c": "Incorrect. Deeper models reduce interpretability due to added abstraction layers.",
+      "d": "Incorrect. Efficiency may decrease with depth unless offset by architectural optimizations."
+    }
   },
   {
     "id": 78,
@@ -1202,7 +1245,12 @@ window.questions = [
     ],
     "correct_answer": "D",
     "k_level": "K1",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. Back-to-back testing compares results but fails with evolving systems due to non-determinism.",
+      "b": "Incorrect. It is not always more efficient—output variability hinders direct comparisons.",
+      "c": "Incorrect. Metamorphic testing isn’t universally better; it depends on the use case.",
+      "d": "Correct. Metamorphic testing is ideal for validating self-learning systems with expected behavior patterns."
+    }
   },
   {
     "id": 79,
@@ -1215,7 +1263,12 @@ window.questions = [
     ],
     "correct_answer": "C",
     "k_level": "K2",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. Rule-based systems lack learning capability and do not constitute AIaaS.",
+      "b": "Incorrect. Fixed pricing rules are deterministic, not adaptive AI behaviors.",
+      "c": "Correct. Adaptive APIs like collaborative filtering exemplify AIaaS by learning from user behavior.",
+      "d": "Incorrect. Static dashboards may use data but don’t involve AI or learning."
+    }
   },
   {
     "id": 80,
@@ -1228,7 +1281,12 @@ window.questions = [
     ],
     "correct_answer": "D",
     "k_level": "K2",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. Rule-based systems are static and not AI-driven.",
+      "b": "Incorrect. Basic scheduling is not adaptive unless explicitly machine-learned.",
+      "c": "Incorrect. Pre-defined tagging lacks the learning feedback loop of AI systems.",
+      "d": "Correct. Neural machine translation adapts to data patterns and improves over time, matching AIaaS characteristics."
+    }
   },
   {
     "id": 81,
@@ -1241,7 +1299,12 @@ window.questions = [
     ],
     "correct_answer": "A",
     "k_level": "K1",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Correct. Legal contracts often omit model accuracy due to probabilistic and changing nature of ML outcomes.",
+      "b": "Incorrect. This is a true statement, not a reason for avoiding accuracy commitments.",
+      "c": "Incorrect. Uptime guarantees are common and expected in service agreements.",
+      "d": "Incorrect. Security and availability SLAs are routinely included in contracts."
+    }
   },
   {
     "id": 82,
@@ -1254,7 +1317,12 @@ window.questions = [
     ],
     "correct_answer": "D",
     "k_level": "K2",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. Pre-trained models still need evaluation against acceptance criteria.",
+      "b": "Incorrect. Choosing an unsuitable model architecture can still introduce project risks.",
+      "c": "Incorrect. Bias may persist even in pre-trained models, especially if training data was biased.",
+      "d": "Correct. Reusing a pre-trained model reduces development effort and project risk."
+    }
   },
   {
     "id": 83,
@@ -1267,7 +1335,12 @@ window.questions = [
     ],
     "correct_answer": "B",
     "k_level": "K1",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. ImageNet is commonly used for training and benchmarking vision models.",
+      "b": "Correct. Using a general-purpose API without tuning can lead to poor results in specific domains.",
+      "c": "Incorrect. Using embedded pre-trained models is often acceptable if validated.",
+      "d": "Incorrect. Modifying and repurposing models is a core transfer learning strategy."
+    }
   },
   {
     "id": 84,
@@ -1280,7 +1353,12 @@ window.questions = [
     ],
     "correct_answer": "B",
     "k_level": "K2",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. Transfer learning is common for many ML types, not just DNNs.",
+      "b": "Correct. The effectiveness of transfer learning depends on similarity between source and target domains.",
+      "c": "Incorrect. Tasks don’t need to be identical—just related.",
+      "d": "Incorrect. A small amount of labeled data in the new domain is typically still needed."
+    }
   },
   {
     "id": 85,
@@ -1293,7 +1371,12 @@ window.questions = [
     ],
     "correct_answer": "D",
     "k_level": "K2",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. Reinforcement learning may not solve performance drops from concept drift.",
+      "b": "Incorrect. The model may have been suitable initially but failed due to changing data.",
+      "c": "Incorrect. Underfitting would show poor performance from the beginning, not after good initial results.",
+      "d": "Correct. Concept drift occurs when data distribution changes over time, degrading model accuracy."
+    }
   },
   {
     "id": 86,
@@ -1306,7 +1389,12 @@ window.questions = [
     ],
     "correct_answer": "A",
     "k_level": "K1",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Correct. Pairwise testing is efficient for finding interaction bugs with fewer test cases than exhaustive testing.",
+      "b": "Incorrect. Exhaustive testing is rarely practical due to combinatorial explosion.",
+      "c": "Incorrect. Pairwise testing is practical and widely used in software testing.",
+      "d": "Incorrect. Automated tools can speed up pairwise testing significantly."
+    }
   },
   {
     "id": 87,
@@ -1319,7 +1407,12 @@ window.questions = [
     ],
     "correct_answer": "D",
     "k_level": "K1",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. AI helps optimize test execution and analysis, reducing—not prolonging—test cycles.",
+      "b": "Incorrect. AI enhances testing strategies but doesn’t eliminate the need for human involvement.",
+      "c": "Incorrect. AI doesn’t introduce defects when used responsibly and correctly.",
+      "d": "Correct. AI can optimize test suites by identifying redundant or low-value cases."
+    }
   },
   {
     "id": 88,
@@ -1332,7 +1425,12 @@ window.questions = [
     ],
     "correct_answer": "D",
     "k_level": "K2",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. Proper data representation is necessary but doesn’t address real-world dynamics.",
+      "b": "Incorrect. Deferring adaptability testing post-deployment increases production risk.",
+      "c": "Incorrect. Testing phases individually may miss system integration issues.",
+      "d": "Correct. Self-learning systems should be tested in realistic, variable environments to ensure safe adaptation."
+    }
   },
   {
     "id": 89,
@@ -1345,7 +1443,12 @@ window.questions = [
     ],
     "correct_answer": "A",
     "k_level": "K2",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Correct. Simply increasing word size (e.g., 32-bit to 64-bit) doesn’t directly improve AI model accuracy and can increase inference time.",
+      "b": "Incorrect. Edge devices increasingly support AI-specific hardware like NPUs.",
+      "c": "Incorrect. Google offers specialized AI hardware like TPUs as cloud services.",
+      "d": "Incorrect. Neuromorphic processors are explicitly designed to diverge from von Neumann architecture."
+    }
   },
   {
     "id": 90,
@@ -1353,7 +1456,12 @@ window.questions = [
     "options": ["a) CPUs", "b) GPUs", "c) NPUs", "d) TPUs"],
     "correct_answer": "B",
     "k_level": "K1",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. CPUs are general-purpose and not optimal for parallel AI workloads.",
+      "b": "Correct. GPUs are well-suited for AI due to massive parallelism and are widely available for local experimentation.",
+      "c": "Incorrect. NPUs are emerging but not yet common in personal devices.",
+      "d": "Incorrect. TPUs are mainly available in cloud platforms, not personal PCs."
+    }
   },
   {
     "id": 91,
@@ -1366,7 +1474,12 @@ window.questions = [
     ],
     "correct_answer": "B",
     "k_level": "K1",
-    "justification": "Copy Session in AI Assistant for more info."
+    "justification": {
+      "a": "Incorrect. ASICs are rarely exposed as general-purpose cloud services due to their inflexibility.",
+      "b": "Correct. TPUs are widely used in cloud AI services and are optimized for deep learning tasks.",
+      "c": "Incorrect. NPUs are used more in edge and mobile, not dominant in cloud yet.",
+      "d": "Incorrect. SoCs (System-on-Chip) are integration platforms, not standalone AI accelerators."
+    }
   },
   {
     "id": 92,
