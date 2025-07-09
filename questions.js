@@ -1063,7 +1063,7 @@ window.questions = [
   },
   {
     "id": 68,
-    "question": "1. What is MOST likely to be the current definition of AI, according to the syllabus?",
+    "question": "What is MOST likely to be the current definition of AI, according to the syllabus?",
     "options": [
       "a) The capability of a system to be autonomous and recognize when to give control back to the user",
       "b) The capability of a system to self-learn without supervision",
@@ -1076,7 +1076,7 @@ window.questions = [
   },
   {
     "id": 69,
-    "question": "2. Which of the following is MOST likely to be a challenge during testing?",
+    "question": "Which of the following is MOST likely to be a challenge during testing?",
     "options": [
       "a) The system shall alert the user in a situation outside of the defined in the \"Operational Autonomy Scenarios\" document",
       "b) The system shall provide results within 2 seconds",
@@ -1089,7 +1089,7 @@ window.questions = [
   },
   {
     "id": 70,
-    "question": "3. Which of the following is MOST likely to be an example of reward hacking?",
+    "question": "Which of the following is MOST likely to be an example of reward hacking?",
     "options": [
       "a) A self-driving car prioritizes avoiding traffic over minimizing distance",
       "b) A chatbot focuses on generating the longest responses to increase user engagement metrics",
@@ -1102,7 +1102,7 @@ window.questions = [
   },
   {
     "id": 71,
-    "question": "4. Connect the quality characteristics with their definitions: 1 - Transparency 2 - Interpretability 3 - Explainability A - The understandability of the AI technology by various stakeholders B - the ease with which the algorithm can be determined C - The clarity with which the user interface displays options and controls for interacting with the AI system D - the ease with which users can determine how the AI-based system generates a particular answer Which combination is correct?",
+    "question": "Connect the quality characteristics with their definitions:\\n1 - Transparency\\n2 - Interpretability\\n3 - Explainability\\n\\nA - The understandability of the AI technology by various stakeholders\\nB - The ease with which the algorithm can be determined\\nC - The clarity with which the user interface displays options and controls for interacting with the AI system\\nD - The ease with which users can determine how the AI-based system generates a particular answer\\n\\nWhich combination is correct?",
     "options": [
       "a) 1-C; 2-A; 3-B",
       "b) 1-B; 2-D; 3-A",
@@ -1115,7 +1115,7 @@ window.questions = [
   },
   {
     "id": 72,
-    "question": "5. In which of the following stages of development bias is LEAST likely to occur in a model?",
+    "question": "In which of the following stages of development bias is LEAST likely to occur in a model?",
     "options": [
       "a) Deployment",
       "b) Model testing",
@@ -1128,7 +1128,7 @@ window.questions = [
   },
   {
     "id": 73,
-    "question": "6. Which of the following is UNLIKELY to cause reward hacking in a model trained by reinforcement learning?",
+    "question": "Which of the following is UNLIKELY to cause reward hacking in a model trained by reinforcement learning?",
     "options": [
       "a) Inaccurate machine learning algorithm",
       "b) Poorly designed reward shaping",
@@ -1141,7 +1141,7 @@ window.questions = [
   },
   {
     "id": 74,
-    "question": "7. Which example for 'AI Effect' is LEAST likely to be valid?",
+    "question": "Which example for 'AI Effect' is LEAST likely to be valid?",
     "options": [
       "a) LLMs are no longer considered truly intelligent as they just predict the next most likely word given a context",
       "b) Systems that do not use neural networks are no longer considered AI as they do not truly mimic how the human brain works",
@@ -1154,7 +1154,7 @@ window.questions = [
   },
   {
     "id": 75,
-    "question": "8. Which statement is true?",
+    "question": "Which statement is true?",
     "options": [
       "a) Narrow AI is a system that is programmed to carry out a specific task and weak AI is a system that performs poorly on its specific task",
       "b) General AI is considered already accomplished, LLMs being the first general AI systems",
@@ -1167,7 +1167,7 @@ window.questions = [
   },
   {
     "id": 76,
-    "question": "9. Which of the following is MOST relevant when integrating a Deep Neural Network (DNN) into a system, with a focus on compressibility and efficiency?",
+    "question": "Which of the following is MOST relevant when integrating a Deep Neural Network (DNN) into a system, with a focus on compressibility and efficiency?",
     "options": [
       "a) Quantify the network scalability",
       "b) Evaluate model performance against resource usage to ensure balance",
@@ -1180,7 +1180,7 @@ window.questions = [
   },
   {
     "id": 77,
-    "question": "10. Which of the following statements MOST accurately describes the impact of increasing the depth of a Deep Neural Network (DNN) on its ability to recognize complex patterns in data?",
+    "question": "Which of the following statements MOST accurately describes the impact of increasing the depth of a Deep Neural Network (DNN) on its ability to recognize complex patterns in data?",
     "options": [
       "a) Enables the network to learn more complex features at various levels",
       "b) Reduces the need for large training datasets",
@@ -1193,7 +1193,7 @@ window.questions = [
   },
   {
     "id": 78,
-    "question": "11. Which of the following is MOST relevant when comparing metamorphic testing to back-to-back testing in the context of self-learning systems?",
+    "question": "Which of the following is MOST relevant when comparing metamorphic testing to back-to-back testing in the context of self-learning systems?",
     "options": [
       "a) Back-to-back testing is more efficient due to the evolving nature of the output",
       "b) Back-to-back testing is always preferable because it is straightforward",
@@ -1206,7 +1206,7 @@ window.questions = [
   },
   {
     "id": 79,
-    "question": "12. Which of the following is MOST likely to describe a system that includes the use of AI as a Service (AIaaS)?",
+    "question": "Which of the following is MOST likely to describe a system that includes the use of AI as a Service (AIaaS)?",
     "options": [
       "a) The inventory tracking system uses a rule-based engine in the cloud to reorder parts when thresholds are met, based on pre-defined logic",
       "b) The customer billing platform is a cloud-hosted solution that applies fixed pricing rules configured through an admin interface",
@@ -1219,7 +1219,7 @@ window.questions = [
   },
   {
     "id": 80,
-    "question": "13. Which of the following software services is MOST likely to be using AI as a Service (AIaaS)?",
+    "question": "Which of the following software services is MOST likely to be using AI as a Service (AIaaS)?",
     "options": [
       "a) A cloud-based accounting platform that automates invoice generation and applies tax rules based on configured settings.",
       "b) An online project management tool that assigns tasks and tracks deadlines based on user input and team schedules.",
@@ -1232,7 +1232,7 @@ window.questions = [
   },
   {
     "id": 81,
-    "question": "14. Which of the following statements is not true about contracts for AIaaS?",
+    "question": "Which of the following statements is not true about contracts for AIaaS?",
     "options": [
       "a) Typically defines ML functional performance metrics because of legal constraints, as the users must know how much they can trust the predictions",
       "b) Rarely defines ML functional performance metrics such as accuracy",
@@ -1245,7 +1245,7 @@ window.questions = [
   },
   {
     "id": 82,
-    "question": "15. A company decides to use a pre-trained model for an image-based classifier. Which risk is BEST mitigated with such a decision?",
+    "question": "A company decides to use a pre-trained model for an image-based classifier. Which risk is BEST mitigated with such a decision?",
     "options": [
       "a) The risk of developing a model that does not meet the acceptance criteria",
       "b) The risk of selecting the wrong machine learning technology for the task",
@@ -1258,7 +1258,7 @@ window.questions = [
   },
   {
     "id": 83,
-    "question": "16. Of the following strategies for model development, which is LEAST likely to be useful?",
+    "question": "Of the following strategies for model development, which is LEAST likely to be useful?",
     "options": [
       "a) Using the publicly available ImageNet dataset to train an image classifier",
       "b) Using OpenAI API for the new chatbot",
@@ -1271,7 +1271,7 @@ window.questions = [
   },
   {
     "id": 84,
-    "question": "17. Which of the following statements about transfer learning is MOST likely to be correct?",
+    "question": "Which of the following statements about transfer learning is MOST likely to be correct?",
     "options": [
       "a) It is used only on deep neural networks",
       "b) The effectiveness highly depends on the similarity between the function performed by the original model and the one required by the new model",
@@ -1284,7 +1284,7 @@ window.questions = [
   },
   {
     "id": 85,
-    "question": "18. For an e-commerce application a machine learning model has been developed. It predicts loss of customers based on shopping behavior and customer feedback. Lately the accuracy has decreased. Which is the most likely issue?",
+    "question": "For an e-commerce application a machine learning model has been developed. It predicts loss of customers based on shopping behavior and customer feedback. Lately the accuracy has decreased. Which is the most likely issue?",
     "options": [
       "a) Reinforcement learning was needed instead of supervised learning as the model needs to adapt to its environment",
       "b) The classification algorithm used is inherently unsuitable for the task",
@@ -1297,7 +1297,7 @@ window.questions = [
   },
   {
     "id": 86,
-    "question": "19. When testing an AI-based system, comparing pairwise testing and exhaustive testing, which statement is true?",
+    "question": "When testing an AI-based system, comparing pairwise testing and exhaustive testing, which statement is true?",
     "options": [
       "a) Pairwise selects combinations, reducing the number of tests needed",
       "b) Both methods are equally efficient",
@@ -1310,7 +1310,7 @@ window.questions = [
   },
   {
     "id": 87,
-    "question": "20. An AI tool is being considered for regression test suite optimization. Which statement is true?",
+    "question": "An AI tool is being considered for regression test suite optimization. Which statement is true?",
     "options": [
       "a) It can lengthen the cycle due to the inherent complexity of AI",
       "b) It will cause developers to rely less on testing and more on the tool",
@@ -1323,7 +1323,7 @@ window.questions = [
   },
   {
     "id": 88,
-    "question": "21. An AI-based system that will control the traffic flow is being developed. The testing performed began with unit tests, integration tests, and in the end real-world scenario testing was performed in a controlled environment. The System needs to adapt to unpredictable traffic conditions and integrate with various data sources and information. Which of the following is a correct statement regarding the testing performed?",
+    "question": "An AI-based system that will control the traffic flow is being developed. The testing performed began with unit tests, integration tests, and in the end real-world scenario testing was performed in a controlled environment. The System needs to adapt to unpredictable traffic conditions and integrate with various data sources and information. Which of the following is a correct statement regarding the testing performed?",
     "options": [
       "a) The approach may overlook continuous learning",
       "b) Concentrating on unit and integration testing is advised, and performing adaptability and scalability testing post-deployment in the operational environment",
@@ -1336,7 +1336,7 @@ window.questions = [
   },
   {
     "id": 89,
-    "question": "22. Which of the following statements about the hardware used to implement AI-based systems is MOST likely to be INCORRECT?",
+    "question": "Which of the following statements about the hardware used to implement AI-based systems is MOST likely to be INCORRECT?",
     "options": [
       "a) To achieve higher accuracy, processors with more bits should be used, but this approach will result in longer inference time",
       "b) Hardware intended for AI is suitable for edge computing and it is under development",
@@ -1349,7 +1349,7 @@ window.questions = [
   },
   {
     "id": 90,
-    "question": "23. To run a small-scale AI model on a PC, which hardware is most suitable?",
+    "question": "To run a small-scale AI model on a PC, which hardware is most suitable?",
     "options": ["a) CPUs", "b) GPUs", "c) NPUs", "d) TPUs"],
     "correct_answer": "B",
     "k_level": "K1",
@@ -1357,7 +1357,7 @@ window.questions = [
   },
   {
     "id": 91,
-    "question": "24. Which of the following hardware accelerators is MOST commonly offered as a cloud-based service for AI workloads?",
+    "question": "Which of the following hardware accelerators is MOST commonly offered as a cloud-based service for AI workloads?",
     "options": [
       "a) Application-Specific Integrated Circuits",
       "b) Tensor Processing Units",
@@ -1370,7 +1370,7 @@ window.questions = [
   },
   {
     "id": 92,
-    "question": "25. Match the quality characteristics with their description:\n1 – the ability of the system to be used in situations that were not anticipated\n2 – the ability of the system to change in response to changing external constraints\n3 – the behavior of achieving a specified goal by a different method than anticipated\n4 – the ease with which the system can be modified for new situations\n\nA – adaptability\nB – reward hacking\nC – flexibility\nD – evolution\nE – autonomy\n\nWhich combination is correct?",
+    "question": "Match the quality characteristics with their description:\n1 – the ability of the system to be used in situations that were not anticipated\n2 – the ability of the system to change in response to changing external constraints\n3 – the behavior of achieving a specified goal by a different method than anticipated\n4 – the ease with which the system can be modified for new situations\n\nA – adaptability\nB – reward hacking\nC – flexibility\nD – evolution\nE – autonomy\n\nWhich combination is correct?",
     "options": [
       "a) 1-A; 2-E; 3-B; 4-D",
       "b) 1-A; 2-D; 3-E; 4-C",
@@ -1388,7 +1388,7 @@ window.questions = [
   },
   {
     "id": 93,
-    "question": "26. Which of the following statements about the different types of autonomy is INCORRECT?",
+    "question": "Which of the following statements about the different types of autonomy is INCORRECT?",
     "options": [
       "a) Data transformation autonomy is the degree to which the model can transform new data to meet defined standards",
       "b) Model parameter autonomy is the degree to which AI can update its parameters",
@@ -1406,7 +1406,7 @@ window.questions = [
   },
   {
     "id": 94,
-    "question": "27. An ML system is analyzing POS data and finds insufficient customer data from its internal sources for decision making. It searches a list of other data sources and adds the found information to its dataset. Example of which autonomy is this:",
+    "question": "An ML system is analyzing POS data and finds insufficient customer data from its internal sources for decision making. It searches a list of other data sources and adds the found information to its dataset. Example of which autonomy is this:",
     "options": [
       "a) Data source autonomy",
       "b) Data modification autonomy",
@@ -1424,7 +1424,7 @@ window.questions = [
   },
   {
     "id": 95,
-    "question": "28. If an AI starts with neural network as a technology, but to perform better in a given task decides to switch to Random Decision Forest, which autonomy does it MOST likely have?",
+    "question": "If an AI starts with neural network as a technology, but to perform better in a given task decides to switch to Random Decision Forest, which autonomy does it MOST likely have?",
     "options": [
       "a) Model technology autonomy",
       "b) Model type autonomy",
@@ -1442,7 +1442,7 @@ window.questions = [
   },
   {
     "id": 96,
-    "question": "29. Which of the following can cause a model to have inappropriate bias?",
+    "question": "Which of the following can cause a model to have inappropriate bias?",
     "options": [
       "a) Racial bias",
       "b) Algorithmic bias",
@@ -1460,7 +1460,7 @@ window.questions = [
   },
   {
     "id": 97,
-    "question": "30. Which of the following hardware is specialized for AI?",
+    "question": "Which of the following hardware is specialized for AI?",
     "options": [
       "a) High-bandwidth memory",
       "b) General purpose CPUs",
@@ -1478,7 +1478,7 @@ window.questions = [
   },
   {
     "id": 98,
-    "question": "31. What is the purpose of keeping the validation set separate from the training set?",
+    "question": "What is the purpose of keeping the validation set separate from the training set?",
     "options": [
       "a) To fine-tune model parameters and assess generalization without bias",
       "b) To verify the model's performance on completely unseen data",
@@ -1496,7 +1496,7 @@ window.questions = [
   },
   {
     "id": 99,
-    "question": "32. What is the advantage of using LIME in testing explainability of machine learning models?",
+    "question": "What is the advantage of using LIME in testing explainability of machine learning models?",
     "options": [
       "a) It guarantees global interpretability for all types of models",
       "b) It improves model accuracy during training",
@@ -1514,7 +1514,7 @@ window.questions = [
   },
   {
     "id": 100,
-    "question": "33. Which of the following best describes the effect of outliers and missing data in a machine learning dataset?",
+    "question": "Which of the following best describes the effect of outliers and missing data in a machine learning dataset?",
     "options": [
       "a) Outliers enhance model robustness; missing data simplifies feature engineering",
       "b) Outliers distort model accuracy; missing data reduced data completion",
@@ -1532,7 +1532,7 @@ window.questions = [
   },
   {
     "id": 101,
-    "question": "34. During the development of a binary classification model, the goal is to minimize false positives (FP) while also keeping false negatives (FN) low. Which of the following is the most appropriate strategy?",
+    "question": "During the development of a binary classification model, the goal is to minimize false positives (FP) while also keeping false negatives (FN) low. Which of the following is the most appropriate strategy?",
     "options": [
       "a) Decrease false positives",
       "b) Add a third category 'review'",
@@ -1550,7 +1550,7 @@ window.questions = [
   },
   {
     "id": 102,
-    "question": "35. Which of the following is NOT a recommendation regarding the ethics of AI by the OECD?",
+    "question": "Which of the following is NOT a recommendation regarding the ethics of AI by the OECD?",
     "options": [
       "a) Misinformation and disinformation amplified by AI should be addressed",
       "b) Stakeholders should proactively engage in responsible stewardship in pursuit of protecting the environment",
@@ -1568,7 +1568,7 @@ window.questions = [
   },
   {
     "id": 103,
-    "question": "36. Which of the following is NOT an ML technique used to implement AI?",
+    "question": "Which of the following is NOT an ML technique used to implement AI?",
     "options": [
       "a) Support vector machine",
       "b) Deductive classifiers",
@@ -1586,7 +1586,7 @@ window.questions = [
   },
   {
     "id": 104,
-    "question": "37. Which of the following is a reasoning technique used to implement AI?",
+    "question": "Which of the following is a reasoning technique used to implement AI?",
     "options": [
       "a) Decision tree",
       "b) Random forest",
@@ -1604,7 +1604,7 @@ window.questions = [
   },
   {
     "id": 105,
-    "question": "38. Which of the following is not a framework for AI development?",
+    "question": "Which of the following is not a framework for AI development?",
     "options": [
       "a) PyTorch",
       "b) Keras",
@@ -1622,7 +1622,7 @@ window.questions = [
   },
   {
     "id": 106,
-    "question": "39. Which of the following is a high-level API and not a framework on its own?",
+    "question": "Which of the following is a high-level API and not a framework on its own?",
     "options": [
       "a) Keras",
       "b) Apache Cognitive Toolkit",
@@ -1640,7 +1640,7 @@ window.questions = [
   },
   {
     "id": 107,
-    "question": "40. Which of the following is a correct definition of Explainability?",
+    "question": "Which of the following is a correct definition of Explainability?",
     "options": [
       "a) The ease with which the AI technology can be understood by the users",
       "b) The ease with which the AI tool's function can be explained",
@@ -1658,7 +1658,7 @@ window.questions = [
   },
   {
     "id": 108,
-    "question": "41. Which of the following is NOT a correct statement about classification?",
+    "question": "Which of the following is NOT a correct statement about classification?",
     "options": [
       "a) Multi-label classification predicts zero or more classes for each input",
       "b) The output is discrete",
@@ -1676,7 +1676,7 @@ window.questions = [
   },
   {
     "id": 109,
-    "question": "42. An AI system is being developed to control multiple machines in a warehouse. It will be able to autonomously identify and sort items, it will also inspect them and register them in a database. Which of the following techniques is most likely to be useful?",
+    "question": "An AI system is being developed to control multiple machines in a warehouse. It will be able to autonomously identify and sort items, it will also inspect them and register them in a database. Which of the following techniques is most likely to be useful?",
     "options": [
       "a) Reinforcement learning",
       "b) Self-supervised learning",
@@ -1694,7 +1694,7 @@ window.questions = [
   },
   {
     "id": 110,
-    "question": "43. What type of data is a CSV file?",
+    "question": "What type of data is a CSV file?",
     "options": [
       "a) Structured",
       "b) Semi-structured",
@@ -1712,7 +1712,7 @@ window.questions = [
   },
   {
     "id": 111,
-    "question": "44. Which type of data is often used in web scraping and social media analysis?",
+    "question": "Which type of data is often used in web scraping and social media analysis?",
     "options": [
       "a) Structured",
       "b) Unstructured",
@@ -1730,7 +1730,7 @@ window.questions = [
   },
   {
     "id": 112,
-    "question": "45. Which is the most resource intensive stage of model development?",
+    "question": "Which is the most resource intensive stage of model development?",
     "options": [
       "a) Model training and tuning",
       "b) Model testing",
@@ -1748,7 +1748,7 @@ window.questions = [
   },
   {
     "id": 113,
-    "question": "46. Which of the following is MOST relevant when testing an AI-based system in real-time, where the impact of false negatives (FN) and false positives (FP) is critical?",
+    "question": "Which of the following is MOST relevant when testing an AI-based system in real-time, where the impact of false negatives (FN) and false positives (FP) is critical?",
     "options": [
       "a) Minimize false positives to reduce the risk of unnecessary actions",
       "b) Maximize detection rate to improve system responsiveness",
@@ -1766,7 +1766,7 @@ window.questions = [
   },
   {
     "id": 114,
-    "question": "47. Which of the following is a critical consideration when selecting a pseudo-oracle for back-to-back testing (BTB)?",
+    "question": "Which of the following is a critical consideration when selecting a pseudo-oracle for back-to-back testing (BTB)?",
     "options": [
       "a) Adaptability in logic update after requirements evaluation",
       "b) Variability of data source used for scenario simulation",
@@ -1784,7 +1784,7 @@ window.questions = [
   },
   {
     "id": 115,
-    "question": "48. What consequences does overlooking the definition of metamorphic relations have on the efficiency of metamorphic testing in AI systems?",
+    "question": "What consequences does overlooking the definition of metamorphic relations have on the efficiency of metamorphic testing in AI systems?",
     "options": [
       "a) It may lead to ambiguous or misleading test outcomes, reducing the testing efficiency",
       "b) The testing process may become slower",
@@ -1802,7 +1802,7 @@ window.questions = [
   },
   {
     "id": 116,
-    "question": "49. When testing a self-learning system, which of the following strategies is MOST effective for ensuring that new learning updates do not negatively impact the system's performance or functionality?",
+    "question": "When testing a self-learning system, which of the following strategies is MOST effective for ensuring that new learning updates do not negatively impact the system's performance or functionality?",
     "options": [
       "a) A/B automated regression testing to compare versions and ensure consistent performance",
       "b) Manual testing with a focus on exploring new behaviors",
@@ -1820,7 +1820,7 @@ window.questions = [
   },
   {
     "id": 117,
-    "question": "50. For an AI system used for self-driving cars, which of the following best describes the role of pairwise testing when selecting test cases from an enormous number of possible parameter combinations?",
+    "question": "For an AI system used for self-driving cars, which of the following best describes the role of pairwise testing when selecting test cases from an enormous number of possible parameter combinations?",
     "options": [
       "a) Pairwise testing will increase the number of test cases, as it focuses on a wide range of parameter combinations without effectively reducing the test suite size",
       "b) Pairwise testing is not suitable for complex systems like self-driving cars due to the complexity and high-impact of their nature",
@@ -1838,7 +1838,7 @@ window.questions = [
   },
   {
     "id": 118,
-    "question": "51. In a regression-based machine learning model developed to estimate car resale values, the R-squared value was calculated to be 0.92. What does this indicate about the model?",
+    "question": "In a regression-based machine learning model developed to estimate car resale values, the R-squared value was calculated to be 0.92. What does this indicate about the model?",
     "options": [
       "a) The model is overfitting the data",
       "b) It is a measure of how well the regression model fits the dependent variable",
@@ -1856,7 +1856,7 @@ window.questions = [
   },
   {
     "id": 119,
-    "question": "52. A machine learning team is using Mean Squared Error to evaluate a regression model predicting delivery times. Which of the following best describes the metric?",
+    "question": "A machine learning team is using Mean Squared Error to evaluate a regression model predicting delivery times. Which of the following best describes the metric?",
     "options": [
       "a) It shows the proportion of variance in the dependent variable explained by the model",
       "b) It is used to determine the distribution of residuals in a classification model",
@@ -1874,7 +1874,7 @@ window.questions = [
   },
   {
     "id": 120,
-    "question": "53. A model for categorizing different types of customers for marketing is being developed. Which of the following metrics BEST suits the intended purpose?",
+    "question": "A model for categorizing different types of customers for marketing is being developed. Which of the following metrics BEST suits the intended purpose?",
     "options": [
       "a) Silhouette coefficient",
       "b) R-squared",
@@ -1892,7 +1892,7 @@ window.questions = [
   },
   {
     "id": 121,
-    "question": "54. Given the following confusion matrix, which is the correct value for F1-score?",
+    "question": "Given the following confusion matrix, which is the correct value for F1-score?",
     "options": ["a) 1,03", "b) 0,35", "c) 0,76", "d) 0,69"],
     "correct_answer": "D",
     "k_level": "K2",
@@ -1905,7 +1905,7 @@ window.questions = [
   },
   {
     "id": 122,
-    "question": "55. Which of the following BEST describes the quality characteristic autonomy?",
+    "question": "Which of the following BEST describes the quality characteristic autonomy?",
     "options": [
       "a) The system has a set of rules for every scenario",
       "b) The system adjusts its actions based on real-time data analysis",
@@ -1923,7 +1923,7 @@ window.questions = [
   },
   {
     "id": 123,
-    "question": "56. Which of the following characteristics of AI makes it MOST challenging to predict?",
+    "question": "Which of the following characteristics of AI makes it MOST challenging to predict?",
     "options": [
       "a) Transparency",
       "b) Continuous learning",
@@ -1941,7 +1941,7 @@ window.questions = [
   },
   {
     "id": 124,
-    "question": "57. Which of the following is a common source of bias in models?",
+    "question": "Which of the following is a common source of bias in models?",
     "options": [
       "a) Feedback loop bias",
       "b) The data lacks diversity and represents narrow set of the population",
@@ -1959,7 +1959,7 @@ window.questions = [
   },
   {
     "id": 125,
-    "question": "58. In a classification model, which metric is most useful when the goal is to minimize false negatives (FN) without significantly increasing false positives (FP)?",
+    "question": "In a classification model, which metric is most useful when the goal is to minimize false negatives (FN) without significantly increasing false positives (FP)?",
     "options": ["a) Precision", "b) Accuracy", "c) F1-score", "d) Recall"],
     "correct_answer": "C",
     "k_level": "K1",
@@ -1972,7 +1972,7 @@ window.questions = [
   },
   {
     "id": 126,
-    "question": "59. Which of the following best distinguishes Artificial General Intelligence (AGI) from Artificial Narrow Intelligence (ANI)?",
+    "question": "Which of the following best distinguishes Artificial General Intelligence (AGI) from Artificial Narrow Intelligence (ANI)?",
     "options": [
       "a) AGI can perform a wide variety of tasks without specific training, while ANI is designed to excel at a specific task",
       "b) AGI is limited to specific domains, whereas ANI has the ability to generalize across domains",
@@ -1990,7 +1990,7 @@ window.questions = [
   },
   {
     "id": 127,
-    "question": "60. Which of the following statements correctly describes different coverage measures for neural networks?",
+    "question": "Which of the following statements correctly describes different coverage measures for neural networks?",
     "options": [
       "a) Full neuron coverage requires that each neuron in the neural network achieves an activation value greater than a specified threshold",
       "b) Sign-sign coverage is similar as a concept to MC/DC coverage for imperative source code",

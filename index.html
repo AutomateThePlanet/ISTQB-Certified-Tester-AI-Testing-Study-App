@@ -5,184 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>ISTQB AI Testing Quiz</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
+    <style>
     body { 
       background-color: #f8f9fa; 
       padding-bottom: env(safe-area-inset-bottom);
     }
     
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
+    .question-block {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
     }
     
-    /* Answer options */
-    .form-check {
-      position: relative;
-      margin-bottom: 1rem;
-      padding: 0;
-      min-height: 24px;
+    .summary { 
+      margin-top: 2rem; 
     }
-
-    .form-check:last-child {
-      margin-bottom: 0;
-    }
-
-    .form-check-input {
-      float: left;
-      margin-left: 0;
-      margin-top: 0.25rem;
-    }
-
-    .form-check-input:checked {
-      background-color: #0d6efd;
-      border-color: #0d6efd;
-    }
-
-    .form-check-label {
-      display: block;
-      padding-left: 1.75rem;
-      margin-bottom: 0;
-      font-size: 0.95rem;
-      line-height: 1.5;
-      color: #212529;
-      cursor: pointer;
-      white-space: pre-wrap;
-      word-break: break-word;
-    }
-
-    /* Review mode styles */
-    .form-check-label.text-success {
-      color: #198754 !important;
-      font-weight: 500;
-    }
-
-    /* Justification section */
-    .justification-section {
-      margin-top: 1.25rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid rgba(0,0,0,0.1);
-    }
-
-    .justification-header {
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: #212529;
-      margin-bottom: 1rem;
-    }
-
-    .justification-text {
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-
-    .justification-text div {
-      margin-bottom: 0.75rem;
-    }
-
-    .justification-text div:last-child {
-      margin-bottom: 0;
-    }
-
-    .justification-text strong {
-      font-weight: 500;
-      color: #212529;
-    }
-
-    .justification-text .text-success {
-      color: #198754 !important;
-      font-weight: 500;
-    }
-
-    /* Navigation buttons */
-    #navigation-buttons {
-      margin-top: 1rem;
-    }
-
-    #navigation-buttons .btn {
-      min-width: 100px;
-      padding: 0.5rem 1rem;
-    }
-
-    /* Top buttons */
-    .btn-group {
-      margin-bottom: 1.5rem;
-    }
-
-    .btn {
-      font-weight: 400;
-      padding: 0.5rem 1rem;
-    }
-
-    /* Timer */
-    #timer {
-      color: #0d6efd;
-      font-weight: 500;
-    }
-
-    .answers-container {
-      margin-top: 1rem;
-    }
-
-    /* Question text */
-    .question-text {
-      font-size: 0.95rem;
-      line-height: 1.5;
-      color: #212529;
-      margin-bottom: 1.25rem;
-      white-space: pre-wrap;
-      word-break: break-word;
-    }
-
-    /* Question block */
-    .question-block {
-      padding: 1.25rem;
+    
+    #glossary-view .term-card {
       background-color: #fff;
-      border-radius: 0.5rem;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 1rem;
       margin-bottom: 1rem;
     }
-
-    /* Question header */
-    .question-number {
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: #212529;
-      margin-bottom: 1rem;
-    }
-
+    
     /* Mobile optimizations */
     @media (max-width: 768px) {
       .container {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
       }
-
-      .question-block {
-        padding: 1rem;
+      
+      h1 {
+        font-size: 1.5rem;
       }
-
-      #navigation-buttons {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: #fff;
-        padding: 1rem;
-        box-shadow: 0 -1px 3px rgba(0,0,0,0.1);
-        z-index: 1000;
-      }
-
-      #navigation-buttons .btn {
+      
+      .btn {
+        margin-bottom: 0.5rem;
         width: 100%;
       }
-
-      .form-check {
-        margin-bottom: 0.75rem;
+      
+      .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
       }
-
+      
+      .form-check {
+        margin-bottom: 1rem;
+        padding: 0.75rem;
+        border: 1px solid #dee2e6;
+        border-radius: 0.375rem;
+      }
+      
+      .form-check-input {
+        margin-top: 0.25rem;
+      }
+      
       .form-check-label {
-        padding-left: 2rem;
+        margin-left: 0.5rem;
+        display: block;
+        line-height: 1.4;
+      }
+      
+      #timer {
+        position: sticky;
+        top: 0;
+        background: rgba(248, 249, 250, 0.95);
+        padding: 0.5rem;
+        z-index: 1000;
+        border-bottom: 1px solid #dee2e6;
+      }
+      
+      #navigation-buttons {
+        position: sticky;
+        bottom: 0;
+        background: rgba(248, 249, 250, 0.95);
+        padding: 1rem;
+        border-top: 1px solid #dee2e6;
+        margin: 0 -10px;
+        z-index: 1000;
+      }
+      
+      #navigation-buttons .btn {
+        margin-bottom: 0;
+      }
+      
+      .question-block {
+        padding: 0.75rem;
+        margin-bottom: 0.75rem;
       }
     }
   </style>
@@ -390,7 +303,7 @@
         <div class="term-card">
           <h5>${t.term}</h5>
           <p><strong>Definition:</strong> ${t.definition}</p>
-          <p><strong>Example:</strong> ${t.example}</p>
+          ${t.example ? `<p><strong>Example:</strong> ${t.example}</p>` : ''}
         </div>
       `).join('');
     }
@@ -501,6 +414,15 @@
       document.getElementById('result-summary').innerHTML = '';
     }
 
+    // Format text to handle newlines
+    function formatText(text) {
+      if (!text) return '';
+      // Handle both actual newlines and \n string literals
+      return text.toString()
+        .replace(/\\n/g, '\n')  // Convert \n string literals to actual newlines
+        .replace(/\n/g, '<br>'); // Convert all newlines to <br> tags
+    }
+
     function renderSingleQuestion() {
       const q = currentSession[currentIndex];
       const container = document.getElementById('quiz-container');
@@ -528,14 +450,10 @@
           value: `${key}) ${value}`
         }));
       } else if (typeof q.options === 'object') {
-        // Handle case where options is an object
         options = Object.entries(q.options).map(([key, value]) => ({
           key: key.toLowerCase(),
           value: `${key}) ${value}`
         }));
-      } else {
-        console.warn('Question has no valid options/answers:', questionId);
-        options = [];
       }
 
       // Determine if multiple choice
@@ -550,61 +468,78 @@
       // Generate answers HTML
       const answersHtml = options.map(opt => {
         const isCorrect = correctAnswers.includes(opt.key.toLowerCase());
-        let checked = '';
+        const isSelected = previousAnswer && (
+          isMulti ? 
+            (Array.isArray(previousAnswer.answer) && previousAnswer.answer.includes(opt.key.toLowerCase())) : 
+            previousAnswer.answer === opt.key.toLowerCase()
+        );
         
-        if (isReviewMode && isCorrect) {
-          checked = 'checked';
-        } else if (!isReviewMode && previousAnswer) {
-          // For multiple choice
-          if (isMulti && Array.isArray(previousAnswer.answer)) {
-            if (previousAnswer.answer.includes(opt.key.toLowerCase())) {
+        if (!isReviewMode) {
+          let checked = '';
+          if (previousAnswer) {
+            if (isMulti && Array.isArray(previousAnswer.answer)) {
+              if (previousAnswer.answer.includes(opt.key.toLowerCase())) {
+                checked = 'checked';
+              }
+            } else if (!isMulti && previousAnswer.answer === opt.key.toLowerCase()) {
               checked = 'checked';
             }
           }
-          // For single choice
-          else if (!isMulti && previousAnswer.answer === opt.key.toLowerCase()) {
-            checked = 'checked';
-          }
+          
+          return `
+            <div class="form-check">
+              <input class="form-check-input" 
+                     type="${isMulti ? 'checkbox' : 'radio'}" 
+                     name="q${questionId}${isMulti ? '[]' : ''}" 
+                     value="${opt.key}" 
+                     id="q${questionId}_${opt.key}"
+                     ${checked}>
+              <label class="form-check-label" for="q${questionId}_${opt.key}">
+                ${formatText(opt.value)}
+              </label>
+            </div>
+          `;
+        } else {
+          // Review mode with bullet points, checkmarks, and X marks
+          const marker = isCorrect ? '✓' : (isSelected ? '✗' : '•');
+          const textClass = isCorrect ? 'text-success' : (isSelected ? 'text-danger' : '');
+          
+          return `
+            <div class="review-answer ${textClass}">
+              <span class="answer-marker">${marker}</span>
+              ${formatText(opt.value)}
+            </div>
+          `;
         }
-        
-        return `
-          <div class="form-check">
-            <input class="form-check-input" 
-                   type="${isMulti ? 'checkbox' : 'radio'}" 
-                   name="q${questionId}${isMulti ? '[]' : ''}" 
-                   value="${opt.key}" 
-                   id="q${questionId}_${opt.key}" 
-                   ${isReviewMode ? 'disabled' : ''} 
-                   ${checked}>
-            <label class="form-check-label ${(isReviewMode && isCorrect) ? 'text-success fw-bold' : ''}" 
-                   for="q${questionId}_${opt.key}">
-              ${opt.value}
-            </label>
-          </div>
-        `;
       }).join('');
 
-      // Generate justifications HTML if in review mode
-      let justificationsHtml = '';
-      if (isReviewMode && q.justification) {
-        if (typeof q.justification === 'object') {
-          justificationsHtml = Object.entries(q.justification).map(([k, j]) => {
-            const isCorrect = correctAnswers.includes(k.toLowerCase());
-            return `<p class="${isCorrect ? 'text-success fw-bold' : ''}">
-              <strong>${k.toUpperCase()}</strong>: ${j}
-            </p>`;
-          }).join('');
-        } else {
-          justificationsHtml = `<p>${q.justification}</p>`;
-        }
-      }
+      // Generate metadata HTML
+      const metadataHtml = q.k_level ? `
+        <div class="metadata">
+          ${q.k_level ? `<span>K-Level: ${q.k_level}</span>` : ''}
+          ${q.points ? `<span>Points: ${q.points}</span>` : ''}
+        </div>
+      ` : '';
 
-      // Update the renderSingleQuestion function template:
+      // Update the question block template
       div.innerHTML = `
         <h5>Question ${currentIndex + 1} of ${currentSession.length} (ID: ${questionId})</h5>
-        <p>${q.question}</p>
+        ${q.k_level ? `<div class="metadata">K-Level: ${q.k_level}</div>` : ''}
+        <p>${formatText(q.question)}</p>
         ${answersHtml}
-        ${isReviewMode ? `<hr><h6>Justifications:</h6>${justificationsHtml}` : ''}
+        ${isReviewMode && q.justification ? `
+          <hr>
+          <h6>Justifications:</h6>
+          ${typeof q.justification === 'object' 
+            ? Object.entries(q.justification).map(([k, j]) => {
+                const isCorrect = correctAnswers.includes(k.toLowerCase());
+                return `<p class="${isCorrect ? 'text-success fw-bold' : ''}">
+                  <strong>${k.toUpperCase()}</strong>: ${formatText(j)}
+                </p>`;
+              }).join('')
+            : `<p>${formatText(q.justification)}</p>`
+          }
+        ` : ''}
       `;
       
       container.appendChild(div);
@@ -746,7 +681,7 @@
                 ${q.k_level ? `<span class="me-3">K-Level: ${q.k_level}</span>` : ''}
                 ${q.points ? `<span>Points: ${q.points}</span>` : ''}
               </div>
-              <p>${q.question}</p>
+              <p>${formatText(q.question)}</p>
           `;
           
           // Generate answers block
@@ -776,7 +711,7 @@
             questionBlock += `
               <div class="answer-option mb-2 ${isCorrect ? 'text-success' : ''} ${isUserSelected && !isCorrect ? 'text-danger' : ''}">
                 <span class="me-2">${isCorrect ? '✓' : (isUserSelected ? '✗' : '•')}</span>
-                ${opt.value}
+                ${formatText(opt.value)}
               </div>
             `;
           });
@@ -790,12 +725,12 @@
                 const isCorrect = correctAnswers.includes(k.toLowerCase());
                 questionBlock += `
                   <p class="${isCorrect ? 'text-success fw-bold' : ''}">
-                    <strong>${k.toUpperCase()}</strong>: ${j}
+                    <strong>${k.toUpperCase()}</strong>: ${formatText(j)}
                   </p>
                 `;
               });
             } else {
-              questionBlock += `<p>${q.justification}</p>`;
+              questionBlock += `<p>${formatText(q.justification)}</p>`;
             }
           }
           
