@@ -2285,7 +2285,7 @@ window.questions = [
 },
 {
   "id": 25,
-  "question": "An ML-based toll charging solution determines the type of incoming vehicles from the images \ncaptured by a camera.  There are different types of cameras available and the solution provider \nclaims to be able to use cameras of different resolutions. The images need to be in jpeg format with \na size of 320X480 pixels for the purpose of training the model as well as for predicting the outcome. \nThe model should be able to classify the vehicle types with certain desired high level of accuracy \nand should be tested against vulnerabilities. Each toll plaza will have its own complete system \nunconnected to any other system.  \nWhich of the following types of testing are the MOST appropriate options for the tests you would \nchoose for system testing? Select TWO options.",
+  "question": "An ML-based toll charging solution determines the type of incoming vehicles from the images captured by a camera.  There are different types of cameras available and the solution provider claims to be able to use cameras of different resolutions. The images need to be in jpeg format with a size of 320X480 pixels for the purpose of training the model as well as for predicting the outcome. The model should be able to classify the vehicle types with certain desired high level of accuracy and should be tested against vulnerabilities. Each toll plaza will have its own complete system unconnected to any other system.  Which of the following types of testing are the MOST appropriate options for the tests you would choose for system testing? Select TWO options.",
   "options": {
     "a": "Testing for concept drift ",
     "b": "Adversarial testing",
