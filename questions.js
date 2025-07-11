@@ -2124,7 +2124,7 @@ window.questions = [
   },
   {
     "id": 121,
-    "question": "Given the following confusion matrix, which is the correct value for F1-score?",
+    "question": "Given the following confusion matrix, which is the correct value for F1-score?\n\nConfusion Matrix:\n                | Actual Positive | Actual Negative\n---------------------------------------------------\nPredicted Positive |      43        |       24\nPredicted Negative |      12        |       13",
     "options": ["a) 1,03", "b) 0,35", "c) 0,76", "d) 0,69"],
     "correct_answer": "D",
     "k_level": "K2",
