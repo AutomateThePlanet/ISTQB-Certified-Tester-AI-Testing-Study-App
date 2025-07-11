@@ -1110,7 +1110,7 @@ window.questions = [
       "c) Visual testing helps find overlapping user interface elements",
       "d) Visual testing fails when the screen layout changes"
     ],
-    "correct_answer": "A",
+    "correct_answer": "C",
     "k_level": "K2",
     "points": "1",
     "justification": {
@@ -2266,7 +2266,7 @@ window.questions = [
 },
 {
   "id": 17,
-  "question": "The confusion matrix for an image classifier is shown below.\n\n| Actual Positive | Actual Negative\n--------------------------------------------------\nPredicted Positive |      78       |       22\nPredicted Negative |       6       |       14\n\nWhich of the following options represents the precision of the classifier?",
+  "question": "The confusion matrix for an image classifier is shown below.\n\n|    Actual Positive | Actual Negative\n--------------------------------------------------\nPredicted Positive  |      78       |       22\nPredicted Negative  |       6        |       14\n\nWhich of the following options represents the precision of the classifier?",
   "options": {
     "a": "20/120 * 100",
     "b": "78/120 * 100",
@@ -2309,7 +2309,7 @@ window.questions = [
 },
 {
   "id": 29,
-  "question": "An AI-based system is being used by the health ministry to identify vulnerable groups of patients, who will be provided with support and advice to help prevent them suffering future illnesses to which they may be susceptible. The results will also be shared with other government agencies \nand medical insurance companies.  The system is initially being trained on a large set of data \ncollected by the health ministry from two surveys of 5,000 men over 50 years of age and 25,000 \nwomen over 30 years of age.  The system will continue to identify vulnerable patients by gathering \ninformation from publicly available social media. \nWhich of the following attributes should be MOST carefully considered when specifying the \nobjectives and acceptance criteria for the system? Select TWO options.",
+  "question": "An AI-based system is being used by the health ministry to identify vulnerable groups of patients, who will be provided with support and advice to help prevent them suffering future illnesses to which they may be susceptible. The results will also be shared with other government agencies and medical insurance companies.  The system is initially being trained on a large set of data collected by the health ministry from two surveys of 5,000 men over 50 years of age and 25,000 women over 30 years of age.  The system will continue to identify vulnerable patients by gathering information from publicly available social media. Which of the following attributes should be MOST carefully considered when specifying the objectives and acceptance criteria for the system? Select TWO options.",
   "options": {
     "a": "Adaptability",
     "b": "Bias",
@@ -2332,7 +2332,7 @@ window.questions = [
 },
 {
   "id": 33,
-  "question": "An AI-based mobile phone search system provides a list of phones that it believes are most suitable for the user based on its knowledge of the user's previous mobile phone usage and their specified preferences.\n\nGiven that metamorphic testing is being used with the following source test case:\n\nInputs                         | Outputs\n--------------------------------------------------------------\nSelected price range: $200–$300       | Recommended Phones:\n3D camera: Don’t care                  | SnapHappy_X1\nScreen size: mid to large             | SnapHappy_M2\nOS: Android or iOS                    | SnapHappy_M3\nBattery Life: Don’t care              | ClickNow_1000x\n                                      | ClickNow_1000xs\n\nAnd this test data for two corresponding follow-up test cases:\n\nInput T1\n-----------\nSelected price range: $200–$300\n3D camera: yes\nScreen size: mid to large\nOS: Android or iOS\nBattery Life: Don’t care\n\nInput T2\n-----------\nSelected price range: $200–$300\n3D camera: no\nScreen size: mid to large\nOS: Android or iOS\nBattery Life: Don’t care\n\nWhich of the following options is MOST likely to be a valid list of recommended phones for the follow-up test cases?",
+  "question": "An AI-based mobile phone search system provides a list of phones that it believes are most suitable for the user based on its knowledge of the user's previous mobile phone usage and their specified preferences.\n\nGiven that metamorphic testing is being used with the following source test case:\n\nInputs                                | Outputs\n--------------------------------------------------------------\nSelected price range: $200–$300       | Recommended Phones:\n3D camera: Don’t care                 | SnapHappy_X1\nScreen size: mid to large             | SnapHappy_M2\nOS: Android or iOS                    | SnapHappy_M3\nBattery Life: Don’t care              | ClickNow_1000x\n                                      | ClickNow_1000xs\n\nAnd this test data for two corresponding follow-up test cases:\n\nInput T1\n-----------\nSelected price range: $200–$300\n3D camera: yes\nScreen size: mid to large\nOS: Android or iOS\nBattery Life: Don’t care\n\nInput T2\n-----------\nSelected price range: $200–$300\n3D camera: no\nScreen size: mid to large\nOS: Android or iOS\nBattery Life: Don’t care\n\nWhich of the following options is MOST likely to be a valid list of recommended phones for the follow-up test cases?",
   "options": {
     "a": "T1: SnapHappy_X1, SnapHappy_M2 \n T2: ClickNow_1000x, ClickNow_1000xs",
     "b": "T1: SnapHappy_M2, SnapHappy_M3, ClickNow_1000x, ClickNow_1000xs \n T2: SnapHappy_X1, ClickNow_1000x",
@@ -2351,7 +2351,7 @@ window.questions = [
 },
 {
   "id": 35,
-  "question": "LAIgal systems has an AI-based product for extracting relevant favorable judgements similar to a \ngiven legal case. This product is used by judges in the courts. Details of the current case are \nprovided, and the system produces relevant judgements. The system needs to be safe from \nmalicious inputs. A similar open-source product exists and is available.  Not having a suitable test \noracle is a challenge when testing.  \nWhich of the following test techniques should be selected to test the new version during system \ntesting? Select TWO options.",
+  "question": "LAIgal systems has an AI-based product for extracting relevant favorable judgements similar to a given legal case. This product is used by judges in the courts. Details of the current case are provided, and the system produces relevant judgements. The system needs to be safe from malicious inputs. A similar open-source product exists and is available.  Not having a suitable test oracle is a challenge when testing.  Which of the following test techniques should be selected to test the new version during system testing? Select TWO options.",
   "options": {
     "a": "A/B testing",
     "b": "Back-to-back testing",

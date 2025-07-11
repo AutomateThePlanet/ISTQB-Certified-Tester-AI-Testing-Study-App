@@ -30,6 +30,16 @@
       padding: 1rem;
       margin-bottom: 1rem;
     }
+
+    .structured-block {
+      white-space: pre-wrap;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.95rem;
+      background-color: #f8f9fa;
+      border-left: 4px solid #dee2e6;
+      padding: 0.5rem 1rem;
+      margin: 1rem 0;
+    }
     
     /* Mobile optimizations */
     @media (max-width: 768px) {
@@ -414,13 +424,35 @@
       document.getElementById('result-summary').innerHTML = '';
     }
 
+      function escapeHtml(str) {
+      return str.replace(/[&<>"']/g, function(m) {
+        return ({
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          '"': '&quot;',
+          "'": '&#39;'
+        })[m];
+      });
+   }
+
     // Format text to handle newlines
     function formatText(text) {
       if (!text) return '';
-      // Handle both actual newlines and \n string literals
-      return text.toString()
-        .replace(/\\n/g, '\n')  // Convert \n string literals to actual newlines
-        .replace(/\n/g, '<br>'); // Convert all newlines to <br> tags
+
+      // Convert string literal '\n' to real newline
+      text = text.toString().replace(/\\n/g, '\n');
+
+      // Detect if the text block looks like a table or test data
+      const isStructuredBlock = text.includes('|') || text.includes('Input T1') || text.includes('-----------');
+
+      if (isStructuredBlock) {
+        // Preserve whitespace and use monospace font
+        return `<div class="structured-block">${escapeHtml(text)}</div>`;
+      }
+
+      // Else fallback: replace real newlines with <br>
+      return text.replace(/\n/g, '<br>');
     }
 
     function renderSingleQuestion() {
