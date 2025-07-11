@@ -350,7 +350,10 @@
         const selected = new Map();
         const weights = questionPool.map(q => {
           const qId = q.question_number || q.id || 'N/A';
-          return 1 / ((state.answerCounts[qId] || 0) + 1);
+          // Higher weight for questions never answered or answered incorrectly
+          const timesAnswered = state.answerCounts[qId] || 0;
+          const timesIncorrect = state.attemptHistory[qId]?.filter(attempt => !attempt.is_correct)?.length || 0;
+          return (1 + timesIncorrect) / (timesAnswered + 1);
         });
         
         let totalWeight = weights.reduce((a, b) => a + b, 0);
@@ -662,10 +665,24 @@
       let incorrect = 0;
       const incorrectQuestions = [];
       
+      // Update state with results
       currentSession.forEach(q => {
         const qId = q.question_number || q.id || 'N/A';
         const userAns = currentSessionAnswers[qId];
         if (!userAns) return;
+        
+        // Update answer counts
+        state.answerCounts[qId] = (state.answerCounts[qId] || 0) + 1;
+        
+        // Update attempt history
+        if (!state.attemptHistory[qId]) {
+          state.attemptHistory[qId] = [];
+        }
+        state.attemptHistory[qId].push({
+          timestamp: Date.now(),
+          answer: userAns.answer,
+          is_correct: userAns.is_correct
+        });
         
         if (userAns.is_correct) {
           correct++;
@@ -674,6 +691,9 @@
           incorrectQuestions.push(q);
         }
       });
+      
+      // Save state to localStorage
+      localStorage.setItem('ctai_exam_state', JSON.stringify(state));
       
       // Calculate time taken
       const timeTaken = state.sessionStartTime ? Math.floor((Date.now() - state.sessionStartTime) / 1000) : 0;
@@ -718,13 +738,18 @@
           
           // Generate answers block
           let options = [];
-          if (q.options) {
+          if (q.options && Array.isArray(q.options)) {
             options = q.options.map((opt, idx) => ({
               key: String.fromCharCode(97 + idx),
               value: opt
             }));
-          } else if (q.answers) {
+          } else if (q.answers && typeof q.answers === 'object') {
             options = Object.entries(q.answers).map(([key, value]) => ({
+              key: key.toLowerCase(),
+              value: `${key}) ${value}`
+            }));
+          } else if (typeof q.options === 'object') {
+            options = Object.entries(q.options).map(([key, value]) => ({
               key: key.toLowerCase(),
               value: `${key}) ${value}`
             }));
